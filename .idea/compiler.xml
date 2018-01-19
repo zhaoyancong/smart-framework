@@ -13,9 +13,8 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
-      <module name="cczzrchapter2" target="1.5" />
       <module name="chapter1" target="1.8" />
-      <module name="chapter2" target="1.5" />
+      <module name="chapter2" target="1.8" />
       <module name="chapter3" target="1.5" />
       <module name="smart-framework" target="1.5" />
     </bytecodeTargetLevel>
