@@ -6,10 +6,18 @@ import org.slf4j.LoggerFactory;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
+/**
+ * 反射工具类
+ */
 public final class ReflectionUtil {
     private static final Logger LOGGER = LoggerFactory.getLogger(ReflectionUtil.class);
 
 
+    /**
+     * 创建实例
+     * @param cls
+     * @return
+     */
     public static Object getInstance(Class<?> cls) {
         Object instance;
         try {
@@ -21,6 +29,13 @@ public final class ReflectionUtil {
         return instance;
     }
 
+    /**
+     * 调用方法
+     * @param obj
+     * @param method
+     * @param params
+     * @return
+     */
     public static Object invokeMethod(Object obj, Method method, Object[] params) {
         Object result;
         try {
@@ -33,6 +48,12 @@ public final class ReflectionUtil {
         return result;
     }
 
+    /**
+     * 设置成员变量的值
+     * @param obj
+     * @param field
+     * @param value
+     */
     public static void setField(Object obj, Field field, Object value) {
         try {
             field.setAccessible(true);
