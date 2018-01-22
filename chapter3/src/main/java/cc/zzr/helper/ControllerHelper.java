@@ -20,7 +20,7 @@ public final class ControllerHelper {
     /**
      * 存放Request和Handler的映射关系（Action Map)
      */
-    private static final Map<Request, Handler> ACTION_MAP = new HashMap();
+    private static final Map<Request, Handler> ACTION_MAP = new HashMap<>();
 
 
     static {

@@ -80,8 +80,8 @@ public class DispatcherServlet extends HttpServlet {
         if (path.startsWith("/")) {
             response.sendRedirect(request.getContextPath() + path);
         } else {
-            Map<String,Object> model = view.getModel();
-            for (Map.Entry<String,Object> entry : model.entrySet()) {
+            Map<String, Object> model = view.getModel();
+            for (Map.Entry<String, Object> entry : model.entrySet()) {
                 request.setAttribute(entry.getKey(), entry.getValue());
             }
             request.getRequestDispatcher(ConfigHelper.getAppJspPath() + path).forward(request, response);

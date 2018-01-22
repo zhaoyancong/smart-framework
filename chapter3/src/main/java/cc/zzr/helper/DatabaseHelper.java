@@ -27,7 +27,7 @@ public final class DatabaseHelper {
 
 
     static {
-        CONNECTION_HOLDER = new ThreadLocal<Connection>();
+        CONNECTION_HOLDER = new ThreadLocal<>();
         QUERY_RUNNER = new QueryRunner();
         Properties props = PropsUtil.loadProps(ConfigConstant.CONFIG_FILE);
         String driver = props.getProperty(ConfigConstant.JDBC_DRIVER);
