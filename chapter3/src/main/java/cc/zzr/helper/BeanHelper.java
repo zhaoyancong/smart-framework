@@ -10,7 +10,7 @@ import java.util.Set;
  * bean助手类
  */
 public class BeanHelper {
-    private static final Map<Class<?>, Object> BEAN_MAP = new HashMap();
+    private static final Map<Class<?>, Object> BEAN_MAP = new HashMap<>();
 
     static {
         Set<Class<?>> beanClassSet = ClassHelper.getBeanClassSet();
